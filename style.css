@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* font-family: 'Press Start 2P', cursive; */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F1EFEF;
+    font-family: "Roboto", "sans-serif";
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calculator {
+    background-color: #7D7C7C;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 6px 0px 30px;
+    height: 500px;
+    width: 400px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 12px;
+}
+
+#screen {
+    background-color: #CCC8AA;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 6px 0px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* flex-grow: 1; */
+    height: 100px;
+    padding: 12px;
+    text-shadow: 2px 2px #7D7C7C;
+}
+
+#screen-top,
+#screen-bottom {
+    font-family: 'Press Start 2P', "sans-serif";
+    overflow: scroll;
+}
+
+#screen-top::-webkit-scrollbar,
+#screen-bottom::-webkit-scrollbar {
+    display: none;
+}
+
+#screen-top {
+    flex-grow: 1;
+}
+
+#screen-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    flex-grow: 2;
+    /* align-self: flex-end; */
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 14px;
+    flex-grow: 1;
+}
+
+/* .top-row .btn {
+    color: #191717;
+} */
+
+.btn {
+    flex-grow: 1;
+    width: 30px;
+    background-color: #191717;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #F1EFEF;
+    /* color: #191717; */
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: -1px 0px 9px 0px rgba(84, 77, 77, 0.44);
+    -webkit-box-shadow: -1px 0px 9px 0px rgba(84, 77, 77, 0.44);
+    -moz-box-shadow: -1px 0px 9px 0px rgba(84, 77, 77, 0.44);
+}
+
+.btn:hover {
+    -webkit-filter: brightness(85%);
+}
+
+#btnClear {
+    background-color: #ec6a6a;
+    color: #191717;
+}
+
+#btnDivide,
+#btnMultiply,
+#btnSubtract,
+#btnAdd {
+    background-color: #F1EFEF;
+    color: #191717;
+}
+
+/* #btnDelete {
+    background-color: #f5e276;
+} */
